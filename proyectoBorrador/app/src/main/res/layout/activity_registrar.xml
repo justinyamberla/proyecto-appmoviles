@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/etContrasenia2R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="@string/hintEtContrasenia"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewConfirmarContrasenia"
+        app:layout_constraintEnd_toEndOf="@+id/etContraseniaR"
+        app:layout_constraintStart_toStartOf="@+id/etContraseniaR"
+        app:layout_constraintTop_toTopOf="@+id/textViewConfirmarContrasenia" />
+
+    <TextView
+        android:id="@+id/textViewConfirmarContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/confirmarContrasenia"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewContrasenia"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContrasenia" />
+
+    <EditText
+        android:id="@+id/etEmailR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:ems="10"
+        android:hint="@string/hintEtEmail"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIsbnC"
+        app:layout_constraintStart_toEndOf="@+id/textViewIsbnC"
+        app:layout_constraintTop_toTopOf="@+id/textViewIsbnC" />
+
+    <TextView
+        android:id="@+id/textViewIsbnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/textViewEmail"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogin" />
+
+    <EditText
+        android:id="@+id/etContraseniaR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="@string/hintEtContrasenia"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewContrasenia"
+        app:layout_constraintStart_toStartOf="@+id/etEmailR"
+        app:layout_constraintTop_toTopOf="@+id/textViewContrasenia" />
+
+    <TextView
+        android:id="@+id/textViewContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/textViewContrasenia"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIsbnC"
+        app:layout_constraintStart_toStartOf="@+id/textViewIsbnC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIsbnC" />
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="158dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:tint="#323973"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewLogin"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenia2R" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

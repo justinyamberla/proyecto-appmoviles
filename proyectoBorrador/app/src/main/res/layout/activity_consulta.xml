@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultaActivity">
+
+    <TextView
+        android:id="@+id/textViewConsultaC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/textViewConsultar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewConsultaC"
+        app:layout_constraintStart_toEndOf="@+id/imageViewConsultaC"
+        app:layout_constraintTop_toTopOf="@+id/imageViewConsultaC" />
+
+    <ImageView
+        android:id="@+id/imageViewConsultaC"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBannerC"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerC"
+        app:srcCompat="@drawable/consulta" />
+
+    <ImageView
+        android:id="@+id/imageViewBannerC"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextCampo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hintEtCampo"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewConsultaC" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="208dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/hintEtCampo"
+        android:entries="@array/Categorias"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCampo"
+        app:layout_constraintStart_toStartOf="@+id/editTextCampo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCampo" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBuscar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCategoria"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonBuscar"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBuscar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBuscar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

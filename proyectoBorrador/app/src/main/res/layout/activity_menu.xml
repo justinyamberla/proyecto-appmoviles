@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textViewHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="casual"
+        android:text="@string/textViewHistorial"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewHistorial"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHistorial"
+        app:layout_constraintTop_toTopOf="@+id/imageViewHistorial" />
+
+    <TextView
+        android:id="@+id/textViewFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="casual"
+        android:text="@string/textViewFavoritos"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFavoritos"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavoritos"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFavoritos" />
+
+    <ImageView
+        android:id="@+id/imageViewConsultar"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner"
+        app:srcCompat="@drawable/consulta" />
+
+    <ImageView
+        android:id="@+id/imageViewHistorial"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewConsultar"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewConsultar"
+        app:srcCompat="@drawable/historial" />
+
+    <ImageView
+        android:id="@+id/imageViewFavoritos"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewHistorial"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHistorial"
+        app:srcCompat="@drawable/favoritos" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btnSalir"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="253dp"
+        android:layout_height="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="casual"
+        android:text="@string/textViewConsultar"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewConsultar"
+        app:layout_constraintStart_toEndOf="@+id/imageViewConsultar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewConsultar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

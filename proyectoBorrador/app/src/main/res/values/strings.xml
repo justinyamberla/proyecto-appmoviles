@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BiblioTEK</string>
+    <!-- Strings related to login -->
+    <string name="textViewEmail">Email</string>
+    <string name="textViewContrasenia">Contraseña</string>
+    <string name="hintEtEmail">usuario@ejemplo.com</string>
+    <string name="hintEtContrasenia">*****</string>
+    <string name="btnLogin">Ingresar</string>
+    <string name="checkBoxRecordarme">Recordarme</string>
+    <string name="textViewRegistrarse"><u>No tienes una cuenta? Registrate Aqui</u></string>
+
+    <!-- Strings related to Registrar -->
+    <string name="confirmarContrasenia">Confirmar\nContraseña</string>
+    <string name="btnRegistrar">Registrar</string>
+    <!-- Strings related to Menu -->
+    <string name="textViewConsultar">Consultar</string>
+    <string name="textViewHistorial">Historial</string>
+    <string name="textViewFavoritos">Favoritos</string>
+    <string name="textViewInformacion">Información</string>
+    <string name="btnSalir">Salir</string>
+    <!-- Strings related to consultar -->
+    <string name="hintEtCampo">Titulo , Autor o ISBN</string>
+    <string name="spinnerCategoria">ISBN</string>
+    <!-- Strings related to libro -->
+    <string name="textViewTitulo">Titulo</string>
+    <string name="textViewAutor">Autor</string>
+    <string name="textViewIsbn">ISBN</string>
+    <string name="textViewTituloEjemplo">El Nombre del Viento</string>
+    <string name="textViewAutorEjemplo">Patrick Rothfuss</string>
+    <string name="textViewIsbnEjemplo">9789588940670</string>
+    <string name="textViewAcciones">Acciones</string>
+    <string name="Locaciones">Locaciones</string>
+    <string name="fecha">Fecha</string>
+    <string name="nombre">Nombre</string>
+    <string name="edificio">Nº Edificio</string>
+    <string name="piso">Piso</string>
+
+    <string-array name="Categorias">
+        <item>Autor</item>
+        <item>ISBN</item>
+        <item>Título</item>
+    </string-array>
+
+</resources>

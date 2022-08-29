@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewAccionesC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="@string/textViewAcciones"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIsbnC"
+        app:layout_constraintTop_toTopOf="@+id/btnVerC" />
+
+    <TextView
+        android:id="@+id/textViewTituloC"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/textViewTitulo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAutorC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAutorC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="@string/textViewAutor"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTituloC"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIsbnC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTituloC"
+        app:layout_constraintTop_toTopOf="@+id/textViewTituloC"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewIsbnC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="@string/textViewIsbn"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAutorC"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAccionesC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewAutorC"
+        app:layout_constraintTop_toTopOf="@+id/textViewAutorC" />
+
+    <ImageButton
+        android:id="@+id/btnVerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAccionesC"
+        app:layout_constraintStart_toStartOf="@+id/textViewAccionesC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_visibility_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

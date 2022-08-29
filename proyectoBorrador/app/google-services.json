@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69126784402",
+    "project_id": "proyectoappmov-e06d0",
+    "storage_bucket": "proyectoappmov-e06d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69126784402:android:76ea9882c713f1443b2d4b",
+        "android_client_info": {
+          "package_name": "com.grupo3.proyectoborrador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69126784402-u5374qq56v7b5b9df150e9u96s0v8cts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCimdpQe2l_2hXM9jf8BqnsH-hxAsDopoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69126784402-u5374qq56v7b5b9df150e9u96s0v8cts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
