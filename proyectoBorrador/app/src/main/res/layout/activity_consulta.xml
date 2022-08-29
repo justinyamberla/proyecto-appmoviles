@@ -7,7 +7,7 @@
     tools:context=".ConsultaActivity">
 
     <TextView
-        android:id="@+id/textViewConsultaC"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -15,22 +15,22 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewConsultaC"
-        app:layout_constraintStart_toEndOf="@+id/imageViewConsultaC"
-        app:layout_constraintTop_toTopOf="@+id/imageViewConsultaC" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
 
     <ImageView
-        android:id="@+id/imageViewConsultaC"
+        android:id="@+id/imageView9"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/imageViewBannerC"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerC"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
         app:srcCompat="@drawable/consulta" />
 
     <ImageView
-        android:id="@+id/imageViewBannerC"
+        android:id="@+id/imageView10"
         android:layout_width="238dp"
         android:layout_height="59dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +46,11 @@
         android:ems="10"
         android:hint="@string/hintEtCampo"
         android:inputType="textPersonName"
+        android:text="Rothfuss"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewConsultaC" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <Spinner
         android:id="@+id/spinnerCategoria"
@@ -57,37 +58,148 @@
         android:layout_height="36dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/hintEtCampo"
-        android:entries="@array/Categorias"
+        android:entries="@array/Games"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="@+id/editTextCampo"
         app:layout_constraintStart_toStartOf="@+id/editTextCampo"
         app:layout_constraintTop_toBottomOf="@+id/editTextCampo" />
 
     <ImageButton
-        android:id="@+id/imageButtonBuscar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
         android:padding="10dp"
-        android:scaleType="fitCenter"
         android:src="@drawable/ic_baseline_search_24"
         app:layout_constraintEnd_toEndOf="@+id/spinnerCategoria"
         app:layout_constraintStart_toStartOf="@+id/spinnerCategoria"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvConsulta"
+    <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonBuscar"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonBuscar"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonBuscar" />
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <TableRow>
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Autor"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="ISBN"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Acciones"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="El Nombre\ndel Viento"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="Patrick\nRothfuss"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="9789588940670"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/btnLibro"
+                android:background="#00FFFFFF"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_visibility_24" />
 
 
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="El Temor\nde un hombre\nSabio"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="Patrick\nRothfuss"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="9789588940670"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:background="#00FFFFFF"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_visibility_24" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="La Música\ndel Silencio"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="Patrick\nRothfuss"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="9789588940670"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:background="#00FFFFFF"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_visibility_24" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

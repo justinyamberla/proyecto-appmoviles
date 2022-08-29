@@ -7,19 +7,19 @@
     tools:context=".LibroActivity">
 
     <TextView
-        android:id="@+id/textViewInformacionL"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/textViewInformacion"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewLibroL"
-        app:layout_constraintStart_toEndOf="@+id/imageViewLibroL"
-        app:layout_constraintTop_toTopOf="@+id/imageViewLibroL" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <ImageView
-        android:id="@+id/imageViewBannerL"
+        android:id="@+id/imageView2"
         android:layout_width="238dp"
         android:layout_height="59dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,12 +28,12 @@
         app:srcCompat="@drawable/logo" />
 
     <ImageView
-        android:id="@+id/imageViewLibroL"
+        android:id="@+id/imageView4"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/imageViewBannerL"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerL"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/microsoftteams_image" />
 
     <TextView
@@ -46,7 +46,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewLibroL" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textViewAutor"
@@ -57,7 +57,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLibro" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
 
     <TextView
         android:id="@+id/textViewIsbn"
@@ -68,11 +68,11 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textViewAutor"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAutorLibro" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAutor" />
 
     <TextView
         android:id="@+id/textViewTituloLibro"
-        android:layout_width="160dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
         android:text="@string/textViewTituloEjemplo"
@@ -83,56 +83,133 @@
 
     <TextView
         android:id="@+id/textViewAutorLibro"
-        android:layout_width="160dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
         android:text="@string/textViewAutorEjemplo"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textViewAutor"
-        app:layout_constraintStart_toStartOf="@+id/textViewTituloLibro"
+        app:layout_constraintStart_toEndOf="@+id/textViewAutor"
         app:layout_constraintTop_toTopOf="@+id/textViewAutor" />
 
     <TextView
         android:id="@+id/textViewIsbnLibro"
-        android:layout_width="160dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
         android:text="@string/textViewIsbnEjemplo"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textViewIsbn"
-        app:layout_constraintStart_toStartOf="@+id/textViewAutorLibro"
+        app:layout_constraintStart_toEndOf="@+id/textViewIsbn"
         app:layout_constraintTop_toTopOf="@+id/textViewIsbn" />
 
     <TextView
-        android:id="@+id/textViewLocaciones"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/Locaciones"
+        android:layout_marginTop="32dp"
+        android:text="Locaciones"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textViewIsbn"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonFavoritosL" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIsbn" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <TableRow>
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Facultad"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Piso"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="Signatura topográfica"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="ELÉCTRICA Y\n ELECTRÓNICA"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="2do"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="537 F812a4"
+                android:textColor="@color/black" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="SISTEMAS"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="1ero"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="BIS-080027"
+                android:textColor="@color/black" />
+
+        </TableRow>
+
+
+    </TableLayout>
 
     <ImageButton
-        android:id="@+id/imageButtonFavoritosL"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
         android:background="#00FFFFFF"
         android:padding="10dp"
-        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIsbnLibro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewIsbn"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLibro"
         app:srcCompat="@drawable/ic_baseline_star_24" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvLocaciones"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        android:scrollbars="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLocaciones" />
 </androidx.constraintlayout.widget.ConstraintLayout>

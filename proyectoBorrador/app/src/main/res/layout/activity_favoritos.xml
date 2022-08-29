@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageViewBannerF"
+        android:id="@+id/imageView3"
         android:layout_width="238dp"
         android:layout_height="59dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,38 +17,162 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TableRow>
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Autor"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="ISBN"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Acciones"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="El Nombre\ndel Viento"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="Patrick\nRothfuss"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="9789588940670"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="160dp">
+
+                <ImageButton
+                    android:id="@+id/btnLibro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_visibility_24" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_delete_24" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="El Temor\nde un hombre\nSabio"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="Patrick\nRothfuss"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="9789588940670"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="160dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_visibility_24" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_delete_24" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
     <ImageView
-        android:id="@+id/imageViewFavoritosF"
+        android:id="@+id/imageView6"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/imageViewBannerF"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerF"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/favoritos" />
 
     <TextView
-        android:id="@+id/textViewFavoritosF"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/textViewFavoritos"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewFavoritosF"
-        app:layout_constraintStart_toEndOf="@+id/imageViewFavoritosF"
-        app:layout_constraintTop_toTopOf="@+id/imageViewFavoritosF" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvFavoritos"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        android:scrollbars="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFavoritosF" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
