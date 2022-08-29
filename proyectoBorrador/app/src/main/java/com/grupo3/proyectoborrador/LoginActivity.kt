@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         textViewRegistrarse = findViewById(R.id.textViewRegistrarse)
         checkBoxRecordarme = findViewById(R.id.checkBoxRecordarme)
 
-        //Inicializacion de las preferencias
+        //Inicialización de las preferencias
 
         leerDatosDePreferencias()
 
@@ -41,7 +41,6 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         //Eventos clic
-
 
         buttonLogin.setOnClickListener {
             val email = etEmail.text.toString()
