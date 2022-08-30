@@ -76,130 +76,13 @@
         app:layout_constraintStart_toStartOf="@+id/spinnerCategoria"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria" />
 
-    <TableLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConsulta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="@+id/imageButton"
         app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
-        <TableRow>
-
-            <TextView
-                android:gravity="center"
-                android:padding="3dip"
-                android:text="Nombre"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <TextView
-                android:gravity="center"
-                android:padding="3dip"
-                android:text="Autor"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <TextView
-                android:gravity="center"
-                android:padding="3dip"
-                android:text="ISBN"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <TextView
-                android:gravity="center"
-                android:padding="3dip"
-                android:text="Acciones"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="El Nombre\ndel Viento"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="Patrick\nRothfuss"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="9789588940670"
-                android:textColor="@color/black" />
-
-            <ImageButton
-                android:id="@+id/btnLibro"
-                android:background="#00FFFFFF"
-                android:padding="10dp"
-                android:src="@drawable/ic_baseline_visibility_24" />
-
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="El Temor\nde un hombre\nSabio"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="Patrick\nRothfuss"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="9789588940670"
-                android:textColor="@color/black" />
-
-            <ImageButton
-                android:background="#00FFFFFF"
-                android:padding="10dp"
-                android:src="@drawable/ic_baseline_visibility_24" />
-
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="La Música\ndel Silencio"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="Patrick\nRothfuss"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:padding="3dip"
-                android:text="9789588940670"
-                android:textColor="@color/black" />
-
-            <ImageButton
-                android:background="#00FFFFFF"
-                android:padding="10dp"
-                android:src="@drawable/ic_baseline_visibility_24" />
-
-
-        </TableRow>
-
-
-    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

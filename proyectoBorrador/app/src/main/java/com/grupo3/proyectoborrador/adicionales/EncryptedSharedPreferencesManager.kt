@@ -6,10 +6,10 @@ import androidx.security.crypto.MasterKeys
 import com.grupo3.proyectoborrador.LOGIN_KEY
 import com.grupo3.proyectoborrador.PASSWORD_KEY
 
-class EncryptedSharedPreferencesManager (val actividad: Activity): FileHandler {
+class EncryptedSharedPreferencesManager (actividad: Activity): FileHandler {
+    //Validar si existen datos en archivo de preferencia, y cargar
 
     val masterKeyAlias: String = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC)
-
     val sharedPreferences = EncryptedSharedPreferences.create(
         "secret_shared_prefs",//filename
         masterKeyAlias,
@@ -20,9 +20,11 @@ class EncryptedSharedPreferencesManager (val actividad: Activity): FileHandler {
 
     override fun SaveInformation(datosAGrabar:Pair<String,String>){
         val editor = sharedPreferences.edit()
-        editor.putString(datosAGrabar.first,datosAGrabar.second)
+        editor.putString(LOGIN_KEY , datosAGrabar.first)
+        editor.putString(PASSWORD_KEY, datosAGrabar.second)
         editor.apply()
     }
+
     override fun ReadInformation():Pair<String,String>{
         val email = sharedPreferences.getString(LOGIN_KEY,"").toString()
         val clave = sharedPreferences.getString(PASSWORD_KEY,"").toString()

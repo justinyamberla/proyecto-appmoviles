@@ -12,12 +12,6 @@ class HistorialActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historial)
 
-        btnLibro=findViewById(R.id.btnLibro)
 
-        btnLibro.setOnClickListener{
-            val intent = Intent(this, LibroActivity::class.java).apply {
-            }
-            startActivity(intent)
-        }
     }
 }

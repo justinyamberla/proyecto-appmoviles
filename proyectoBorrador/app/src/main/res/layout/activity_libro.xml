@@ -114,93 +114,6 @@
         app:layout_constraintStart_toStartOf="@+id/textViewIsbn"
         app:layout_constraintTop_toBottomOf="@+id/textViewIsbn" />
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7">
-
-        <TableRow>
-
-            <TextView
-                android:gravity="center"
-                android:padding="3dip"
-                android:text="Facultad"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <TextView
-                android:gravity="center"
-                android:padding="3dip"
-                android:text="Piso"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-
-            <TextView
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="Signatura topográfica"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="ELÉCTRICA Y\n ELECTRÓNICA"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="2do"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="537 F812a4"
-                android:textColor="@color/black" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="SISTEMAS"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="1ero"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="6dip"
-                android:text="BIS-080027"
-                android:textColor="@color/black" />
-
-        </TableRow>
-
-
-    </TableLayout>
-
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="57dp"
@@ -212,4 +125,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTituloLibro"
         app:srcCompat="@drawable/ic_baseline_star_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLocaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

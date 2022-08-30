@@ -12,12 +12,6 @@ class FavoritosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favoritos)
 
-        btnLibro=findViewById(R.id.btnLibro)
 
-        btnLibro.setOnClickListener{
-            val intent = Intent(this, LibroActivity::class.java).apply {
-            }
-            startActivity(intent)
-        }
     }
 }

@@ -11,7 +11,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.grupo3.proyectoborrador.adicionales.EncryptedSharedPreferencesManager
 
-lateinit var manejadorPreferencias:EncryptedSharedPreferencesManager
+lateinit var manejadorPreferencias: EncryptedSharedPreferencesManager
 lateinit var etEmail: EditText
 lateinit var etContrasenia: EditText
 lateinit var buttonLogin: Button
@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         textViewRegistrarse = findViewById(R.id.textViewRegistrarse)
         checkBoxRecordarme = findViewById(R.id.checkBoxRecordarme)
 
-        //Inicialización de las preferencias
+        //Inicializacion de las preferencias
 
         leerDatosDePreferencias()
 
@@ -41,6 +41,7 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         //Eventos clic
+
 
         buttonLogin.setOnClickListener {
             val email = etEmail.text.toString()
@@ -55,6 +56,7 @@ class LoginActivity : AppCompatActivity() {
 
             //Autenticar Firebase
             AutenticarUsuario(email, clave)
+
         }
 
         textViewRegistrarse.setOnClickListener{
@@ -81,7 +83,6 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
     }
-
 
 
 
@@ -123,9 +124,9 @@ class LoginActivity : AppCompatActivity() {
         if (listadoLeido.first != null) {
             checkBoxRecordarme.isChecked = true
         }
+
         etEmail.setText(listadoLeido.first)
         etContrasenia.setText(listadoLeido.second)
-
     }
 
     private fun guardarDatosEnPreferencias() {
@@ -138,6 +139,7 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 "" to ""
             }
+
         manejadorPreferencias.SaveInformation(listadoAGrabar)
     }
 

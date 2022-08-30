@@ -28,6 +28,7 @@
     <string name="textViewTituloEjemplo">El Nombre del Viento</string>
     <string name="textViewAutorEjemplo">Patrick Rothfuss</string>
     <string name="textViewIsbnEjemplo">9789588940670</string>
+    <string name="textViewAcciones">Acciones</string>
 
     <string-array name="Games">
         <item>Autor</item>
