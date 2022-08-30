@@ -18,6 +18,8 @@ class MenuActivity : AppCompatActivity() {
         btnHistorial=findViewById(R.id.imageViewHistorial)
         btnFavoritos=findViewById(R.id.imageViewFavoritos)
 
+        val email = intent.getStringExtra(EXTRA_LOGIN)
+
 
         btnConsultar.setOnClickListener{
             val intent = Intent(this, ConsultaActivity::class.java).apply {
@@ -28,12 +30,14 @@ class MenuActivity : AppCompatActivity() {
         btnHistorial.setOnClickListener{
             val intent = Intent(this, HistorialActivity::class.java).apply {
             }
+            intent.putExtra(EXTRA_LOGIN,email)
             startActivity(intent)
         }
 
         btnFavoritos.setOnClickListener{
             val intent = Intent(this, FavoritosActivity::class.java).apply {
             }
+            intent.putExtra(EXTRA_LOGIN,email)
             startActivity(intent)
         }
     }
