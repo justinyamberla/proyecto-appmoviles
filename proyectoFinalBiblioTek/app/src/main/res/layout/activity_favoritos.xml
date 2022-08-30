@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".FavoritosActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewBannerF"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewFavoritosF"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBannerF"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerF"
+        app:srcCompat="@drawable/favoritos" />
+
+    <TextView
+        android:id="@+id/textViewFavoritosF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/textViewFavoritos"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFavoritosF"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavoritosF"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFavoritosF" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFavoritosF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

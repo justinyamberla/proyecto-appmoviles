@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewTituloH"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/textViewTitulo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAutorH"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAutorH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFechaH"
+        app:layout_constraintTop_toTopOf="@+id/textViewAutorH" />
+
+    <ImageButton
+        android:id="@+id/btnEliminarH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAccionesH"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAccionesH"
+        app:layout_constraintStart_toEndOf="@+id/btnVerH"
+        app:layout_constraintTop_toTopOf="@+id/textViewAccionesH"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    <ImageButton
+        android:id="@+id/btnVerH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAccionesH"
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminarH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIsbnH"
+        app:layout_constraintStart_toStartOf="@+id/textViewAccionesH"
+        app:layout_constraintTop_toTopOf="@+id/textViewAccionesH"
+        app:srcCompat="@drawable/ic_baseline_visibility_24" />
+
+    <TextView
+        android:id="@+id/textViewAccionesH"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/textViewAcciones"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIsbnH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIsbnH"
+        app:layout_constraintTop_toTopOf="@+id/textViewIsbnH" />
+
+    <TextView
+        android:id="@+id/textViewFechaH"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/textViewFecha"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTituloH"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTituloH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTituloH" />
+
+    <TextView
+        android:id="@+id/textViewAutorH"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/textViewAutor"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIsbnH"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIsbnH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTituloH"
+        app:layout_constraintTop_toTopOf="@+id/textViewIsbnH" />
+
+    <TextView
+        android:id="@+id/textViewIsbnH"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/textViewIsbn"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAccionesH"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewAutorH" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
