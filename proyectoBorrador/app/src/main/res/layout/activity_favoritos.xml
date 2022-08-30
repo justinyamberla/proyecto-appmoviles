@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageViewBannerF"
         android:layout_width="238dp"
         android:layout_height="59dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,35 +18,37 @@
         app:srcCompat="@drawable/logo" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageViewFavoritosF"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBannerF"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerF"
         app:srcCompat="@drawable/favoritos" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewFavoritosF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/textViewFavoritos"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFavoritosF"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavoritosF"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFavoritosF" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvFavoritos"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFavoritosF" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

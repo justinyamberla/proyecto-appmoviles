@@ -15,15 +15,16 @@ class ConsultaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_consulta)
 
         var libros = arrayListOf<Libro>()
-        libros.add(Libro("a","a","a"))
-        libros.add(Libro("b","a","a"))
-        libros.add(Libro("c","a","a"))
-        libros.add(Libro("d","a","a"))
+        libros.add(Libro("TituloAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","AutorA","IsbnA"))
+        libros.add(Libro("TituloB","AutorB","IsbnB"))
+        libros.add(Libro("TituloC","AutorC","IsbnC"))
+        libros.add(Libro("TituloD","AutorD","IsbnD"))
 
         val recyclerViewConsulta: RecyclerView = findViewById(R.id.rvConsulta);
         recyclerViewConsulta.layoutManager = LinearLayoutManager(this);
-        recyclerViewConsulta.adapter = ConsultaAdapter(libros);
+        recyclerViewConsulta.adapter = ConsultaAdapter(this,libros);
         recyclerViewConsulta.setHasFixedSize(true);
+
 
 
     }

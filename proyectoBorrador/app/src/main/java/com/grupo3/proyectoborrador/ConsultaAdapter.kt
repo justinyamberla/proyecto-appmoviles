@@ -1,17 +1,18 @@
 package com.grupo3.proyectoborrador
 
-import android.graphics.Paint
+import android.content.Context
+import android.content.Intent
 import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.grupo3.proyectoborrador.adicionales.Libro
 
-class ConsultaAdapter(private val dataSet:ArrayList<Libro>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+class ConsultaAdapter(private val mContext:Context ,private val dataSet:ArrayList<Libro>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val TYPE_HEADER : Int = 0
 
@@ -71,6 +72,15 @@ class ConsultaAdapter(private val dataSet:ArrayList<Libro>) : RecyclerView.Adapt
             holder.textViewTitulo.text = dataSet[position-1].titulo
             holder.textViewAutor.text = dataSet[position-1].autor
             holder.textViewIsbn.text = dataSet[position-1].isbn
+
+            holder.btnVer.setOnClickListener {
+                val intent = Intent(mContext, LibroActivity::class.java).apply {
+                    putExtra("titulo", dataSet[position-1].titulo)
+                    putExtra("autor", dataSet[position-1].autor)
+                    putExtra("isbn", dataSet[position-1].isbn)
+                }
+                mContext.startActivity(intent)
+            }
         }
     }
     override fun getItemCount() = dataSet.size + 1

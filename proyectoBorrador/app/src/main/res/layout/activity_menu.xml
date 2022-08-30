@@ -7,7 +7,7 @@
     tools:context=".MenuActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewHistorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageViewHistorial" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewFavoritos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -39,7 +39,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner"
         app:srcCompat="@drawable/consulta" />
 
     <ImageView
@@ -61,7 +61,7 @@
         app:srcCompat="@drawable/favoritos" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewBanner"
         android:layout_width="253dp"
         android:layout_height="96dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewConsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

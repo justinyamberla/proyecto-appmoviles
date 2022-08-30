@@ -7,7 +7,7 @@
     tools:context=".ConsultaActivity">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewConsultaC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -15,22 +15,22 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewConsultaC"
+        app:layout_constraintStart_toEndOf="@+id/imageViewConsultaC"
+        app:layout_constraintTop_toTopOf="@+id/imageViewConsultaC" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageViewConsultaC"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView10"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBannerC"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBannerC"
         app:srcCompat="@drawable/consulta" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageViewBannerC"
         android:layout_width="238dp"
         android:layout_height="59dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,11 +46,10 @@
         android:ems="10"
         android:hint="@string/hintEtCampo"
         android:inputType="textPersonName"
-        android:text="Rothfuss"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewConsultaC" />
 
     <Spinner
         android:id="@+id/spinnerCategoria"
@@ -58,31 +57,37 @@
         android:layout_height="36dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/hintEtCampo"
-        android:entries="@array/Games"
+        android:entries="@array/Categorias"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="@+id/editTextCampo"
         app:layout_constraintStart_toStartOf="@+id/editTextCampo"
         app:layout_constraintTop_toBottomOf="@+id/editTextCampo" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="61dp"
-        android:layout_height="55dp"
+        android:id="@+id/imageButtonBuscar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
         android:padding="10dp"
+        android:scaleType="fitCenter"
         android:src="@drawable/ic_baseline_search_24"
         app:layout_constraintEnd_toEndOf="@+id/spinnerCategoria"
         app:layout_constraintStart_toStartOf="@+id/spinnerCategoria"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvConsulta"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        android:layout_marginBottom="32dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonBuscar"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBuscar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBuscar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
