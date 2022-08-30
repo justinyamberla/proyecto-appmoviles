@@ -1,8 +1,10 @@
 package com.grupo3.proyectoFinalBiblioTek
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Spinner
@@ -37,6 +39,7 @@ class ConsultaActivity : AppCompatActivity() {
         imageButtonBuscar.setOnClickListener {
             var resultado = ArrayList<Libro>()
             for (libro in libros) {
+
                 if (spinnerCategoria.selectedItem == "Autor") {
                     if (libro.autor.contains(editTextCampo.text, ignoreCase = true)) {
                         resultado.add(libro)
@@ -66,6 +69,8 @@ class ConsultaActivity : AppCompatActivity() {
                     layoutManager.orientation
                 )
             )
+            val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(this.currentFocus!!.windowToken,0)
         }
 
 

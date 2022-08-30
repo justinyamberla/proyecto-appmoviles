@@ -7,7 +7,7 @@
     <string name="hintEtContrasenia">*****</string>
     <string name="btnLogin">Ingresar</string>
     <string name="checkBoxRecordarme">Recordarme</string>
-    <string name="textViewRegistrarse"><u>No tienes una cuenta? Registrate Aqui</u></string>
+    <string name="textViewRegistrarse"><u>¿No tienes una cuenta? Regístrate aquí</u></string>
 
     <!-- Strings related to Registrar -->
     <string name="confirmarContrasenia">Confirmar\nContraseña</string>
@@ -21,7 +21,7 @@
     <string name="btnSalir">Salir</string>
 
     <!-- Strings related to consultar -->
-    <string name="hintEtCampo">Titulo , Autor o ISBN</string>
+    <string name="hintEtCampo">Título , Autor o ISBN</string>
     <string name="spinnerCategoria">ISBN</string>
 
     <!-- Strings related to libro -->
